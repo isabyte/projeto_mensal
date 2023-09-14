@@ -1,0 +1,33 @@
+/* index */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #F8F9FA;
+}
+
+.logo {
+    width: 20%;
+    margin-bottom: 5%;
+}
+
+.login {
+    margin-top: 12%;
+    margin-left: 10%;
+    margin-right: 10%;
+    /*background-color: #FEFEFE;*/
+    border-radius: 5%;
+    max-width: 330px;
+    padding: 1rem;
+}
+
+.entrar {
+    background-color: #695783;
+}
+
+/* dashboard 
+
+.navbar {
+    background-color: #695783;
+}
+
+*/
