@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Dashboard</title>
+        <title>Imobiliária da Kiki</title>
     
         <!--Bootstrap css externo-->
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -14,16 +14,58 @@
 
 <body>
 
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="/imagens/kiki.png" alt="Logo" width="30" height="25" class="d-inline-block align-text-top">
-            Imobiliária da Kiki
-          </a>
-        </div>
-      </nav>
+  <!--barra de navegação-->
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #695783;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Imobiliária da Kiki</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Para alugar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Para vender</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Já alugados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Já vendidos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Corretor
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Meu perfil</a></li>
+              <li><a class="dropdown-item" href="#">Meus clientes</a></li>
+              <li><a class="dropdown-item" href="#">Meus contratos</a></li>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Configurações</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../index.html">Sair</a>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
 
+  <div class="row col-md-12">
+    <div class="col-md-2">
+      menu
+    </div>
+    <div class="col-md-10">
+      conteudo
+    </div>
+  </div>
 
-    <p>teste</p>
+  <!--Bootstrap JavaScript-->
+  <script type="text/JavaScript" src="js/bootstrap.js"></script>
+  <script type="text/JavaScript" src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
