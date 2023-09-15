@@ -20,11 +20,16 @@ body {
     padding: 1rem;
 }
 
-.entrar {
+.botao-roxo {
     background-color: #695783;
+    border-color: #695783 ;
 }
 
-/* dashboard */
+.botao-roxo:hover {
+    background-color: #45335fdf;
+}
+
+/* principal */
 
 .navbar-nav > li > .dropdown-menu {
     background-color: #695783;
@@ -32,4 +37,13 @@ body {
 
 .navbar-nav > li > .dropdown-menu a:hover {
     background-color: #f0efef77
+}
+
+.pesquisa {
+    margin-top: 10%;
+}
+
+.pesquisa-avancada {
+    padding: 20px;
+    margin-left: 150px;
 }
