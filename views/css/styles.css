@@ -25,3 +25,11 @@ body {
 }
 
 /* dashboard */
+
+.navbar-nav > li > .dropdown-menu {
+    background-color: #695783;
+}
+
+.navbar-nav > li > .dropdown-menu a:hover {
+    background-color: #f0efef77
+}
