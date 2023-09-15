@@ -40,10 +40,24 @@ body {
 }
 
 .pesquisa {
-    margin-top: 10%;
+    margin-top: 13%;
 }
 
 .pesquisa-avancada {
     padding: 20px;
     margin-left: 150px;
+}
+
+.imoveis-display {
+    margin: 100px 85px 50px 85px;
+}
+
+.img-thumbnail {
+    height: 250px; 
+    width: 250px; 
+    object-fit: scale-down;
+}
+
+.endereco {
+    padding-top: 15px;
 }
