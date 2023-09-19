@@ -1,0 +1,31 @@
+.bg-login {
+    background-color: #d8d2d2;
+}
+
+.box-login {
+    margin-top: 35%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 46%, rgba(255, 255, 255, 1) 51%, rgba(194, 189, 189, 1) 100%);
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.espaco {
+    margin-top: 2%;
+    padding: 5px;
+}
+
+.Lavanda {
+    background: rgb(51, 49, 88);
+    background: linear-gradient(180deg, rgba(51, 49, 88, 1) 0%, rgba(145, 22, 255, 1) 35%, rgba(198, 134, 255, 1) 100%);
+}
+
+.ColdBreath {
+    background: rgb(49, 82, 88);
+    background: linear-gradient(90deg, rgba(49, 82, 88, 1) 0%, rgba(22, 166, 255, 1) 35%, rgba(134, 249, 255, 1) 100%);
+}
+
+.BlackWhite {
+    background: rgb(116, 116, 116);
+    background: linear-gradient(90deg, rgba(116, 116, 116, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 65%, rgba(116, 116, 116, 1) 100%);
+}
