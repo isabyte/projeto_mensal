@@ -14,7 +14,6 @@ body {
     margin-top: 12%;
     margin-left: 10%;
     margin-right: 10%;
-    /*background-color: #FEFEFE;*/
     border-radius: 5%;
     max-width: 330px;
     padding: 1rem;
@@ -39,8 +38,8 @@ body {
     background-color: #f0efef77
 }
 
-.pesquisa {
-    margin-top: 13%;
+.barra-pesquisa {
+    margin-top: 2%;
 }
 
 .pesquisa-avancada {
@@ -69,5 +68,13 @@ body {
 
 .endereco {
     padding-top: 15px;
+    padding-left: 52px;
+    padding-bottom: 60px;
+}
+
+/* resultado-busca */
+
+.resultado-busca {
+    margin-bottom: 50px;
     padding-left: 52px;
 }
