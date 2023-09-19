@@ -48,9 +48,13 @@ body {
     margin-left: 150px;
 }
 
-
 .imoveis-display {
-    margin: 100px 85px 50px 85px;
+    margin: 50px 85px 50px 85px;
+}
+
+.ultimos-imoveis {
+    margin-bottom: 50px;
+    padding-left: 52px;
 }
 
 .img-thumbnail {
@@ -59,6 +63,11 @@ body {
     object-fit: scale-down;
 }
 
+.imagem-imovel {
+    text-align: center;
+}
+
 .endereco {
     padding-top: 15px;
+    padding-left: 52px;
 }
