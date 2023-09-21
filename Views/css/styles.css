@@ -106,3 +106,14 @@ font-weight: 500;
 line-height: 1.2;
 color: var(--bs-heading-color);
 }
+
+/* cadastro-imoveis */
+.botao-invisivel{
+    background-color: #F8F9FA;
+    border-color: #F8F9FA ;
+    font-size: 18px;
+}
+.botao-invisivel:hover {
+    background-color: #dee2e6;
+    border-color: #dee2e6;
+}
