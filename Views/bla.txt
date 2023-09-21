@@ -8,3 +8,10 @@
             <img src="imagens/casa1.jpeg" class="img-thumbnail" alt="...">
           </div>
         </div> 
+
+        para editar form
+        enabled
+        para nao editar form
+        disabled
+
+
