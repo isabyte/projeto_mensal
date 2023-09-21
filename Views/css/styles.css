@@ -1,0 +1,79 @@
+/* index */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #F8F9FA;
+}
+
+.logo {
+    width: 20%;
+    margin-bottom: 5%;
+}
+
+.login {
+    margin-top: 12%;
+    margin-left: 7%;
+    margin-right: 10%;
+    max-width: 330px;
+    padding: 1rem;
+}
+
+.botao-roxo {
+    background-color: #695783;
+    border-color: #695783 ;
+}
+
+.botao-roxo:hover {
+    background-color: #45335fdf;
+}
+
+/* principal */
+
+.navbar-nav > li > .dropdown-menu {
+    background-color: #695783;
+}
+
+.navbar-nav > li > .dropdown-menu a:hover {
+    background-color: #f0efef77
+}
+
+.barra-pesquisa {
+    margin-top: 2%;
+}
+
+.pesquisa-avancada {
+    padding: 20px;
+    margin-left: 150px;
+}
+
+.imoveis-display {
+    margin: 50px 85px 50px 85px;
+}
+
+.ultimos-imoveis {
+    margin-bottom: 50px;
+    padding-left: 52px;
+}
+
+.img-thumbnail {
+    height: 250px; 
+    width: 250px; 
+    object-fit: scale-down;
+}
+
+.imagem-imovel {
+    text-align: center;
+}
+
+.endereco {
+    padding-top: 15px;
+    padding-left: 52px;
+    padding-bottom: 60px;
+}
+
+/* resultado-busca */
+
+.resultado-busca {
+    margin-bottom: 50px;
+    padding-left: 52px;
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imobiliária da Kiki</title>
+    
+    <!--Bootstrap css externo-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <!--Meu css-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+  </head>
+
+<body>
+
+  <!--barra de navegação-->
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #695783;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Imobiliária da Kiki</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="para-alugar.html">Para alugar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="para-vender.html">Para vender</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ja-alugado.html">Já alugados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ja-vendidos.html">Já vendidos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Corretor
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Meu perfil</a></li>
+              <li><a class="dropdown-item" href="#">Meus clientes</a></li>
+              <li><a class="dropdown-item" href="#">Meus contratos</a></li>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Relatórios</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../index.html">Sair</a>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!--barra de pesquisa-->
+  <section class="barra-pesquisa">
+    <div class="row col-md-12">
+      <div class="col-md-4"></div>
+      <div class="col-md-3">
+        <input class="form-control" type="search" placeholder="Digite um bairro ou rua" aria-label="Search">
+      </div>
+      <div class="col-md-1">
+        <a href="resultado-busca.html" class="btn btn-secondary botao-roxo" role="button">Pesquisar</a>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+
+    <!--pesquisa avançada-->
+    <div class="row col-md-12">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 pesquisa-avancada">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-secondary botao-roxo" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Pesquisa avançada
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Pesquisa avançada</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+                <!--filtros-->
+                <form>
+                  <h1 class="h6">Você procura um imóvel para...</h1>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Compra
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Venda
+                    </label>
+                  </div><br/>
+                    
+                  <h1 class="h6">No estilo...</h1>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Casa
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Apartamento
+                    </label>
+                  </div><br/>
+
+                  <h1 class="h6">No bairro...</h1>
+                  <input type="text" class="form-control"><br/>
+
+                  <h1 class="h6">De valor mínimo...</h1>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">.00</span>
+                  </div><br/>
+
+                  <h1 class="h6">E valor máximo...</h1>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">.00</span>
+                  </div><br/>
+
+                  <h1 class="h6">Com a seguinte quantidade de quartos...</h1>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4 ou mais</option>
+                  </select><br/>
+
+                  <h1 class="h6">E a seguinte quantidade de banheiros...</h1>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4 ou mais</option>
+                  </select><br/>
+
+                  <h1 class="h6">E mais essas características...</h1>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Mobiliado
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Portaria
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Sacada
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Piscina
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Aceita pets
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Academia
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Salão de festas
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Quadra de esportes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    Parque infantil
+                    </label>
+                  </div>
+                </form>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <a href="resultado-busca.html" class="btn btn-secondary botao-roxo" role="button">Pesquisar</a>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+
+      <div class="col-md-4"></div>
+    </div>
+  </section>
+
+  <!--imóveis-->
+  <section>
+    <div class="imoveis-display">
+
+      <h1 class="ultimos-imoveis h3">Últimos imóveis adicionados</h1>
+
+      <div class="row col-md-12">
+
+        <div class="col-md-3">
+          <div class="imagem-imovel">
+            <a href="info-imovel.html"><img src="imagens/casa1.jpeg" class="rounded img-thumbnail" alt="..."></a>
+          </div>
+          <div class="endereco">
+            <h1 class="h4">Bairro</h1>
+            <h2 class="h6">Rua, 123</h2>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="imagem-imovel">
+            <a href="info-imovel.html"><img src="imagens/predio1.jpeg" class="rounded img-thumbnail" alt="..."></a>
+          </div>
+          <div class="endereco">
+            <h1 class="h4">Bairro2</h1>
+            <h2 class="h6">Rua, 456</h2>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="imagem-imovel">
+            <a href="info-imovel.html"><img src="imagens/casa2.jpeg" class="rounded img-thumbnail" alt="..."></a>
+          </div>
+          <div class="endereco">
+            <h1 class="h4">Bairro3</h1>
+            <h2 class="h6">Rua, 789</h2>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="imagem-imovel">
+            <a href="info-imovel.html"><img src="imagens/predio2.jpeg" class="rounded img-thumbnail" alt="..."></a>
+          </div>
+          <div class="endereco">
+            <h1 class="h4">Bairro4</h1>
+            <h2 class="h6">Rua, 143</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Bootstrap JavaScript-->
+  <script type="text/JavaScript" src="js/bootstrap.js"></script>
+  <script type="text/JavaScript" src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
