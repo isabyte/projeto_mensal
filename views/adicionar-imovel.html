@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Imobiliária da Kiki</title>
-    
-    <!--Bootstrap css externo-->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    
-    <!--Meu css-->
-    <link rel="stylesheet" href="css/style.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Imobiliária da Kiki</title>
 
-    <!--Fontes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  </head>
+  <!--Bootstrap css externo-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!--Meu css-->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
 
 <body>
 
   <!--barra de navegação-->
   <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #695783;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Imobiliária da Kiki</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="principal.html">Imobiliária da Kiki</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="para-alugar.html">Para alugar</a>
+            <a class="nav-link" href="para-alugar.html">Para alugar</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="para-vender.html">Para vender</a>
@@ -48,7 +49,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="perfil-corretor.html">Meu perfil</a></li>
               <li><a class="dropdown-item" href="meus_clientes.html">Meus clientes</a></li>
-              <li><a class="dropdown-item" href="">Meus contratos</a></li>
+              <li><a class="dropdown-item" href="contratos.html">Meus contratos</a></li>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="cadastrar-corretor.html">Cadastrar Corretor</a>
               <div class="dropdown-divider"></div>
@@ -62,173 +63,179 @@
       </div>
     </div>
   </nav>
-  
-      <!--informações-->
-    <section>
-      <div class="informacoes col-md-12">
-        <h1 class="h3">Informações do imóvel</h1>
 
-        <!--imagem-->
-        <div class="row container-info">
+  <!--informações-->
+  <section>
+    <div class="informacoes col-md-12">
+      <h1 class="h3">Informações do imóvel</h1>
 
-          <div class="col-md-2">
-            <div class="img-info">
-              <label>+Adicionar Imagem</label>
-              <input type="file" name="arq">
+      <!--imagem-->
+      <div class="row container-info">
+
+        <div class="col-md-2">
+          <div class="img-info">
+            <label>+Adicionar Imagem</label>
+            <input type="file" name="arq">
+          </div>
+        </div>
+
+        <!--dados-->
+        <div class="col-md-10">
+
+          <div class="row col-md-12">
+            <div class="col-md-4">
+              <label>CEP</label>
+              <input type="text" class="form-control" enabled><br />
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <a href="#" class="btn btn-secondary botao-roxo" role="button">Novo contrato</a>
             </div>
           </div>
 
-          <!--dados-->
-          <div class="col-md-10">
-            
-            <div class="row col-md-12">
-              <div class="col-md-4">
-                <label>CEP</label>
-                <input type="text" class="form-control" enabled><br/>
-              </div>
-              <div class="col-md-4"></div>
-              <div class="col-md-4">
-                <a href="#" class="btn btn-secondary botao-roxo" role="button">Novo contrato</a>
-              </div>
+          <div class=" row col-md-12">
+
+            <div class="col-md-4">
+              <label>Rua</label>
+              <input class="form-control" type="text" enabled><br />
             </div>
 
-            <div class=" row col-md-12">
-
-              <div class="col-md-4">
-                <label>Rua</label>
-                <input class="form-control" type="text" enabled><br/>
-              </div>
-
-              <div class="col-md-4">
-                <label>Número</label>
-                <input class="form-control" type="text" enabled><br/>
-              </div>
-
-              <div class="col-md-4">
-                <label>Complemento</label>
-                <input class="form-control" type="text" enabled><br/>
-              </div>
-
-              <div class="col-md-4">
-                <label>Bairro</label>
-                <input class="form-control" type="text" enabled><br/>
-              </div>
-
-              <div class="col-md-4">
-                <label>Cidade</label>
-                <input class="form-control" type="text" enabled><br/>
-              </div>
-
-              <div class="col-md-4">
-                <label>Estado</label>
-                <input class="form-control" type="text" enabled><br/>
-              </div>
-
+            <div class="col-md-4">
+              <label>Número</label>
+              <input class="form-control" type="text" enabled><br />
             </div>
-          
-          </div>
-          
-        </div>
 
-        <!--detalhes-->
-        <h1 class="h3">Detalhes</h1>
-
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox">
-            <label class="form-check-label"> Mobiliado
-          </div>
-
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox">
-          <label class="form-check-label"> Portaria
-        </div>
-
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox">
-          <label class="form-check-label"> Sacada
-        </div>
-
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="checkbox">
-          <label class="form-check-label"> Piscina
-        </div>
-
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox">
-            <label class="form-check-label"> Aceita Pets
-          </div>
-
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox">
-            <label class="form-check-label"> Academia
-          </div>
-
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox">
-            <label class="form-check-label"> Salão de festas
-          </div>
-
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox">
-            <label class="form-check-label"> Quadra de esportes
-          </div>
-
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox">
-            <label class="form-check-label"> Parque infantil
-          </div>
-
-        <div class="row container-info">
-
-          <!--carrossel-->
-          <div class="col-md-6">
-            <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="imagens/interior1.jpeg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="imagens/interior2.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="imagens/interior3.jpeg" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+            <div class="col-md-4">
+              <label>Complemento</label>
+              <input class="form-control" type="text" enabled><br />
             </div>
+
+            <div class="col-md-4">
+              <label>Bairro</label>
+              <input class="form-control" type="text" enabled><br />
+            </div>
+
+            <div class="col-md-4">
+              <label>Cidade</label>
+              <input class="form-control" type="text" enabled><br />
+            </div>
+
+            <div class="col-md-4">
+              <label>Estado</label>
+              <input class="form-control" type="text" enabled><br />
+            </div>
+
           </div>
 
-          <!--descrição-->
-          <div class="col-md-6">
-            <textarea class="form-control" rows="15" placeholder="Descrição do imóvel" disabled></textarea>
-          </div>
-        </div>
-
-        <!--valor-->
-        <div class="row container-info">
-          <div class="col-md-9"></div>
-          <div class="col-md-3">
-            <h2>Valor</h2>
-          </div>
         </div>
 
       </div>
-    </section>
 
-    <!--Bootstrap JavaScript-->
+      <!--detalhes-->
+      <h1 class="h3">Detalhes</h1>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label"> Mobiliado
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label"> Portaria
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label"> Sacada
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label"> Piscina
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label"> Aceita Pets
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label"> Academia
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label"> Salão de festas
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label"> Quadra de esportes
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label"> Parque infantil
+      </div>
+
+      <div class="row container-info">
+
+        <!--carrossel-->
+        <div class="col-md-6">
+          <div id="carouselExampleIndicators" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/interior1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/interior2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/interior3.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!--descrição-->
+        <div class="col-md-6">
+          <textarea class="form-control" rows="15" placeholder="Descrição do imóvel" disabled></textarea>
+        </div>
+      </div>
+
+      <!--valor-->
+      <div class="row container-info">
+        <div class="col-md-9"></div>
+        <div class="col-md-4">
+          <h2>Valor: R$ 1100,00</h2>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Bootstrap JavaScript-->
   <script type="text/JavaScript" src="js/bootstrap.js"></script>
   <script type="text/JavaScript" src="js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
