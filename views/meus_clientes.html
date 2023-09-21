@@ -5,8 +5,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="views/css/bootstrap.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Meus Clientes</title>
 
@@ -44,7 +44,7 @@
                             <li><a class="dropdown-item" href="meus_clientes.html">Meus clientes</a></li>
                             <li><a class="dropdown-item" href="#">Meus contratos</a></li>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Configurações</a>
+                            <a class="dropdown-item" href="#">Relatórios</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="../index.html">Sair</a>
                         </ul>
@@ -59,14 +59,13 @@
             <h3>Central de Clientes</h3>
             <a class="menuhover" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                     fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
-                    <path
-                        d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
                 </svg> Relacionamento</a>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                <a data-bs-toggle="modal" data-bs-target="#cadastro">Cadastro </a>
+            <!--a href="cadastro_clientes.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-house-door" viewBox="0 0 16 16">
-                    <path
-                        d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
-                </svg> Cadastro</a>
+                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z" />
+                </svg> Cadastro</a-->
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-house-door" viewBox="0 0 16 16">
                     <path
@@ -215,8 +214,87 @@
 </div>
 
 
-<script type="text/javascript" src="views/js/bootstrap.js"></script>
-<script type="text/javascript" src="views/js/bootstrap.bundle.js"></script>
+
+  
+  <!-- Modal de cadastro de clientes -->
+  <div class="modal fade" id="cadastro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content modal-tm">        
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastro de Clientes</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body">
+            <div class="row col-md-12">
+                <div class="col-md-6">
+                    <label class="text-primary">Nome Completo</label>
+                    <input type="text" class="form-control" placeholder="Insira o nome completo"/>
+                </div>
+                <div class="col-md-6">
+                    <label class="text-primary">Data Nascimento</label>
+                    <input type="date" class="form-control" placeholder="Insira o nome completo"/>
+                </div> 
+
+                <div class="espaco"></div>
+
+                <div class="col-md-6">
+                    <label class="text-primary">Endereço</label>
+                    <input type="text" class="form-control" placeholder="Insira o Endereço completo"/>
+                </div>
+                <div class="col-md-2">
+                    <label class="text-primary">N*</label>
+                    <input
+                     type="text" class="form-control" placeholder="Insira o Número"/>
+                </div>
+                <div class="col-md-4">
+                    <label class="text-primary">Bairro</label>
+                    <input type="text" class="form-control" placeholder="Insira o Bairro"/>
+                </div>
+                <div class="col-md-6">
+                    <label class="text-primary">Cidade</label>
+                    <input type="text" class="form-control" placeholder="Insira a Cidade"/>
+                </div>
+                <div class="col-md-6">
+                    <label class="text-primary">Estado</label>
+                    <input type="text" class="form-control" placeholder="Insira o Estado"/>
+                </div>
+                <div class="col-md-6">
+                    <label class="text-primary">CEP</label>
+                    <input type="text" class="form-control" placeholder="Insira o CEP"/>
+                </div>
+
+                <div class="espaco"></div>
+
+                <div class="col-md-6">
+                    <label class="text-primary">Telefone 1</label>
+                    <input type="text" class="form-control" placeholder="Insira o Número de Telefone Celular"/>
+                </div>
+                <div class="col-md-6">
+                    <label class="text-primary">Telefone 2</label>
+                    <input type="text" class="form-control" placeholder="Insira o Número de Telefone Fixo"/>
+                </div>
+                <div class="col-md-6">
+                    <label class="text-primary">Email</label>
+                    <input type="text" class="form-control" placeholder="Insira o Email"/>
+                </div>
+
+                <div class="espaco"></div>
+
+            </div>
+            <br>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Concluir Cadastro</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- final do modal de cadastro de clientes-->
+
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

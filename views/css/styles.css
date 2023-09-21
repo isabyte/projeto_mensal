@@ -216,3 +216,13 @@ body {
     padding-top: 15px;
     padding-left: 52px;
 }
+
+/*Inicio Cadastro de Clientes*/
+
+.modal-tm{
+    width: 1000px; 
+}
+
+.espaco{
+    margin-top: 10px;
+}
