@@ -77,3 +77,22 @@ body {
     margin-bottom: 50px;
     padding-left: 52px;
 }
+
+/* info-imovel */
+
+
+.informacoes {
+    padding: 50px 60px 20px 70px;
+}
+
+
+.container-info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.carousel-item img {
+    height: 400px; 
+    width: 400px; 
+    object-fit: scale-down;
+}
