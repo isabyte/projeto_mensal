@@ -15,3 +15,64 @@
         disabled
 
 
+.
+.
+.
+ <!--dados pessoais-->
+
+
+      <div class="row col-md-12">
+        <div>
+          <label>CEP</label>
+          <input class="form-control" type="text" enabled><br />
+        </div>
+
+        <div>
+          <label>Rua</label>
+          <input class="form-control" type="text" enabled><br />
+        </div>
+
+        <div>
+          <label>Numero</label>
+          <input class="form-control" type="text" enabled><br />
+        </div>
+      </div>
+
+      <div class="row col-md-6">
+        <div>
+          <label>Bairro</label>
+          <input class="form-control" type="text" enabled><br />
+        </div>
+
+        <div>
+          <label>Complemento</label>
+          <input class="form-control" type="text" enabled><br />
+        </div>
+      </div>
+
+      <div class="row col-md-6">
+        <div >
+          <label>Cidade</label>
+          <input class="form-control" type="text" enabled><br />
+        </div>
+
+        <div>
+          <label>Estado</label>
+          <input class="form-control" type="text" enabled><br />
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <!-- Login Cadastro -->
+      <div class="col-md-13">
+        <p>asdas</p>
+      </div>
+    </div>
+    </div>
