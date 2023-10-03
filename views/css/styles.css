@@ -1,0 +1,28 @@
+/* index */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #F8F9FA;
+}
+
+.logo {
+    width: 20%;
+    margin-bottom: 5%;
+}
+
+.login {
+    margin-top: 12%;
+    margin-left: 7%;
+    margin-right: 10%;
+    max-width: 330px;
+    padding: 1rem;
+}
+
+.botao-roxo {
+    background-color: #695783;
+    border-color: #695783 ;
+}
+
+.botao-roxo:hover {
+    background-color: #45335fdf;
+}
