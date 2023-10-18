@@ -104,3 +104,8 @@ body {
     width: 400px; 
     object-fit: scale-down;
 }
+
+.valor {
+    display: block;
+    float: right;
+}
