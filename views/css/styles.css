@@ -104,3 +104,7 @@ body {
     width: 400px; 
     object-fit: scale-down;
 }
+
+#mapa {
+    height: 500px;
+}

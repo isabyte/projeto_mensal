@@ -8,6 +8,16 @@
     
     <!--Bootstrap css externo-->
     <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!--Leaflet css externo-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <!--Leaflet JavaScript externo-->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
     
     <!--Meu css-->
     <link rel="stylesheet" href="css/styles.css">
@@ -64,9 +74,10 @@
       <div class="informacoes col-md-12">
         <h1 class="h3">Informações do imóvel</h1>
 
-        <!--imagem-->
+        <!--imagem e dados -->
         <div class="row container-info">
 
+          <!--imagem-->
           <div class="col-md-2">
             <div class="img-info">
               <img src="imagens/casa1.jpeg" class="img-thumbnail" alt="...">
@@ -181,6 +192,17 @@
           </div>
         </div>
 
+        <!-- mapa -->
+        <h1 class="h3">Localização</h1>
+
+        <div class="row container-info">
+
+          <div class="col-md-1"></div>
+          <div class="col-md-10" id="mapa"></div>
+          <div class="col-md-1"></div>
+
+        </div>
+
         <!--valor-->
         <div class="row container-info">
           <div class="col-md-9"></div>
@@ -192,8 +214,20 @@
       </div>
     </section>
 
-    <!--Bootstrap JavaScript-->
+  <!--Bootstrap JavaScript-->
   <script type="text/JavaScript" src="js/bootstrap.js"></script>
   <script type="text/JavaScript" src="js/bootstrap.bundle.js"></script>
+
+  <!--JavaScript próprio-->
+  <script>
+    var mapa = L.map('mapa').setView([51.505, -0.09], 13);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(mapa);
+
+  </script>
+
 </body>
 </html>
