@@ -93,6 +93,10 @@ body {
     padding: 50px 60px 20px 70px;
 }
 
+.dados-imovel label {
+    font-weight: bold;
+}
+
 
 .container-info {
     padding-top: 20px;
