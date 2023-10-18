@@ -93,20 +93,23 @@ body {
     padding: 50px 60px 20px 60px;
 }
 
-.dados-imovel label {
-    font-weight: bold;
-}
-
-
 .container-info {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.dados-imovel label {
+    font-weight: bold;
 }
 
 .carousel-item img {
     height: 400px; 
     width: 400px; 
     object-fit: scale-down;
+}
+
+.descricao-imovel {
+    text-align: justify;
 }
 
 .valor {
