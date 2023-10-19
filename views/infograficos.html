@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Imobiliária da Kiki</title>
+
+  <!--Bootstrap css externo-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!--Meu css-->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--Fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--barra de navegação-->
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #695783;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="principal.html">Imobiliária da Kiki</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="para-alugar.html">Para alugar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="para-vender.html">Para vender</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ja-alugado.html">Já alugados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ja-vendidos.html">Já vendidos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Corretor
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="perfil-corretor.html">Meu perfil</a></li>
+              <li><a class="dropdown-item" href="meus_clientes.html">Meus clientes</a></li>
+              <li><a class="dropdown-item" href="contratos.html">Meus contratos</a></li>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="cadastrar-corretor.html">Cadastrar Corretor</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="RelatorioVendas.html">Relatórios</a>
+              <a class="dropdown-item" href="infograficos.html">Infográficos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="index.html">Sair</a>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="dropdown container-lg text-center espaco">
+
+    <h1 class="text-center fw-bolder">Infográficos</h1>
+
+    <select class="form-select espaco" aria-label="Default select example">
+      <option selected>Ano</option>
+      <option value="1">2023</option>
+      <option value="2">2022</option>
+      <option value="3">2021</option>
+      <option value="3">2020</option>
+      <option value="3">2019</option>
+    </select>
+
+    <span class="badge espaco text-bg-primary">Aluguéis</span>
+    <span class="badge text-bg-danger">Vendas</span>
+    <span class="badge text-bg-warning text-white">Clientes</span>
+
+  </div>
+
+  <div class="container text-center espaco fw-bolder">
+    <div class="row">
+      <h2 class="text-center fw-bolder">2023</h2>
+      <div class="col">
+        Janeiro
+        <img src="img/info1.png" class="img-thumbnail rounded mx-auto d-block" alt="...">
+      </div>
+      <div class="col">
+        Fevereiro
+        <img src="img/info3.png" class="img-thumbnail rounded mx-auto d-block" alt="...">
+      </div>
+      <div class="col">
+        Março
+        <img src="img/info1.png" class="img-thumbnail rounded mx-auto d-block" alt="...">
+      </div>
+
+      <hr class="espaco">
+
+      <div class="row">
+        <div class="col">
+          Abril
+          <img src="img/info1.png" class="img-thumbnail rounded mx-auto d-block" alt="...">
+        </div>
+        <div class="col">
+          Maio
+          <img src="img/info2.png" class="img-thumbnail rounded mx-auto d-block" alt="...">
+        </div>
+        <div class="col">
+          Junho
+          <img src="img/info2.png" class="img-thumbnail rounded mx-auto d-block" alt="...">
+        </div>
+      </div>
+
+      <hr class="espaco">
+
+      <div class="row">
+        <div class="col">
+          Julho
+          <img src="img/info1.png" class="img-thumbnail rounded mx-auto d-block" alt="...">
+        </div>
+        <div class="col">
+          Agosto
+          <img src="img/info3.png" class="img-thumbnail rounded mx-auto d-block" alt="...">
+        </div>
+        <div class="col">
+          Setembro
+          <img src="img/info3.png" class="img-thumbnail rounded mx-auto d-block" alt="...">
+        </div>
+      </div>
+
+      <hr class="espaco">
+
+      <div class="row">
+        <div class="col">
+          Outubro
+          <img src="img/info3.png" class="img-thumbnail rounded mx-auto d-block" alt="...">
+        </div>
+        <div class="col">
+          Novembro
+          <img src="img/info1.png" class="img-thumbnail rounded mx-auto d-block" alt="...">
+        </div>
+        <div class="col">
+          Dezembro
+          <img src="img/info2.png" class="img-thumbnail rounded mx-auto d-block" alt="...">
+        </div>
+
+        <hr class="espaco">
+
+      </div>
+    </div>
+
+    <script type="text/JavaScript" src="js/bootstrap.js"></script>
+    <script type="text/JavaScript" src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
