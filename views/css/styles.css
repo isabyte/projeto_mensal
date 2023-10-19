@@ -69,6 +69,12 @@ body {
     padding-left: 52px;
 }
 
+.espaco
+{
+    margin-top: 10px;
+    padding: 2;
+}
+
 .img-thumbnail {
     height: 250px; 
     width: 250px; 
@@ -122,3 +128,250 @@ body {
     display: block;
     float: right;
 }
+
+/**/
+
+/* cadastro-imoveis */
+.botao-invisivel{
+    background-color: #F8F9FA;
+    border-color: #F8F9FA ;
+    font-size: 18px;
+}
+.botao-invisivel:hover {
+    background-color: #dee2e6;
+    border-color: #dee2e6;
+}
+
+/* Iníco Menu Lateral*/
+.menulateral{
+    width: 20%;
+    background-color: white;
+    height: 100%;
+}
+
+.menulateral a.menuhover{
+    border-left: 4px solid #695783;
+    background-color: rgb(245,245,245);
+    color: #777;
+    font-weight: bold;
+}
+.menulateral a:hover{
+    border-left: 4px solid #695783;
+    background-color: rgb(245,245,245);
+    color: #777;
+    font-weight: bold;
+}
+
+.menulateral a.menuhover > svg{
+    color: #777;
+}
+
+.menulateral h3{
+    color: #333;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.menulateral a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #444;
+    cursor: pointer;
+}
+
+.menulateral a > svg{
+    color: #444;
+}
+
+/*Início Content*/
+.content{
+    width: 80%;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+}
+
+/* Iníco Parte de Cima da PG*/
+.titulo-secao{
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+}
+
+.titulo-secao h2{
+    font-size: 20px;
+}
+
+.titulo-secao p{
+    font-size: 14px;
+}
+
+.titulo-secao svg{
+    color: #695783;
+}
+/*Fim Parte de Cima da PG*/
+
+/* Início Box dos Clientes*/
+.box-info{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-info-single{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    margin: 0 10px;
+}
+/*Final Box dos Clientes*/
+
+/*Início Painel dos Clientes*/
+.painelClientes{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.painelCab{
+    display: absolute;
+    align-items: center;
+}
+
+.painelCab svg{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.painelCab h5{
+    font-size: 20px;
+    margin: 0;
+}
+.painelText {
+    margin: 10px 0;
+    height: 250px;
+    overflow: visible;
+    overflow-y: auto;        
+}
+
+.painelText h6 {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+/*Fim Painel dos Clientes*/
+
+/*Fim do Content*/
+
+/*Inicio Cadastro de Clientes*/
+
+.modal-tm{
+    width: 1000px; 
+}
+
+.espaco1{
+    margin-top: 5px;
+    padding: 5%;
+}
+
+/* modal cadastrar corretor */
+.modal-title {
+    font-size: 24px;
+    text-align: center;
+    background-color: #695783;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.close {
+    font-size: 24px;
+    font-weight: bold;
+    color: #695783;
+}
+
+.modal-content {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #ccc;
+    color: #000;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border-radius: 0;
+    border-color: #ccc;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.modal-footer .btn {
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.modal-footer .btn-info {
+    background-color: #695783;
+    border-color: #695783;
+    color: #fff;
+}
+
+.form-check-label {
+    margin-left: 10px;
+}
+
+.close {
+    color: #fff;
+    opacity: 1;
+}
+
+.modal-header {
+    background-color: #695783;
+    color: #fff;
+}
+
+.modal-body {
+    background-color: #fff;
+}
+
+.modal-footer {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.botao-modal{
+    background-color: #ced4da;;
+    border-color: #ced4da; ;
+}
+
+.modal-footer.text-center {
+    justify-content: center;
+}
+
+.espaco1{
+    display: flex;
+}
+
