@@ -19,45 +19,49 @@
   </head>
 <body>
 
-    <!--barra de navegação-->
-    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #695783;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="principal.html">Imobiliária da Kiki</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="para-alugar.html">Para alugar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="para-vender.html">Para vender</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ja-alugado.html">Já alugados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Já vendidos</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Corretor
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Meu perfil</a></li>
-                <li><a class="dropdown-item" href="#">Meus clientes</a></li>
-                <li><a class="dropdown-item" href="#">Meus contratos</a></li>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Relatórios</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="../index.html">Sair</a>
-              </ul>
-            </li>
-          </ul>
-        </div>
+  <!--barra de navegação-->
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #695783;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="principal.html">Imobiliária da Kiki</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="para-alugar.html">Para alugar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="para-vender.html">Para vender</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ja-alugado.html">Já alugados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="ja-vendidos.html">Já vendidos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Corretor
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="perfil-corretor.html">Meu perfil</a></li>
+              <li><a class="dropdown-item" href="meus_clientes.html">Meus clientes</a></li>
+              <li><a class="dropdown-item" href="contratos.html">Meus contratos</a></li>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="cadastrar-corretor.html">Cadastrar Corretor</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="RelatorioVendas.html">Relatórios</a>
+              <a class="dropdown-item" href="Infograficos.html">Infográfico</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="index.html">Sair</a>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
   <!--barra de pesquisa-->
   <section class="barra-pesquisa">
@@ -76,12 +80,14 @@
       <div class="col-md-4"></div>
       <div class="col-md-4 pesquisa-avancada">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-secondary botao-roxo" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <button type="button" class="btn btn-secondary botao-roxo" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop">
           Pesquisa avançada
         </button>
 
         <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -104,8 +110,8 @@
                     <label class="form-check-label" for="flexCheckDefault">
                       Venda
                     </label>
-                  </div><br/>
-                    
+                  </div><br />
+
                   <h1 class="h6">No estilo...</h1>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -118,24 +124,24 @@
                     <label class="form-check-label" for="flexCheckDefault">
                       Apartamento
                     </label>
-                  </div><br/>
+                  </div><br />
 
                   <h1 class="h6">No bairro...</h1>
-                  <input type="text" class="form-control"><br/>
+                  <input type="text" class="form-control"><br />
 
                   <h1 class="h6">De valor mínimo...</h1>
                   <div class="input-group mb-3">
                     <span class="input-group-text">$</span>
                     <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
                     <span class="input-group-text">.00</span>
-                  </div><br/>
+                  </div><br />
 
                   <h1 class="h6">E valor máximo...</h1>
                   <div class="input-group mb-3">
                     <span class="input-group-text">$</span>
                     <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
                     <span class="input-group-text">.00</span>
-                  </div><br/>
+                  </div><br />
 
                   <h1 class="h6">Com a seguinte quantidade de quartos...</h1>
                   <select class="form-select" aria-label="Default select example">
@@ -144,7 +150,7 @@
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4+">4 ou mais</option>
-                  </select><br/>
+                  </select><br />
 
                   <h1 class="h6">E a seguinte quantidade de banheiros...</h1>
                   <select class="form-select" aria-label="Default select example">
@@ -153,7 +159,7 @@
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4+">4 ou mais</option>
-                  </select><br/>
+                  </select><br />
 
                   <h1 class="h6">E mais essas características...</h1>
                   <div class="form-check">
@@ -207,7 +213,7 @@
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                    Parque infantil
+                      Parque infantil
                     </label>
                   </div>
                 </form>
@@ -219,7 +225,7 @@
               </div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
 
       <div class="col-md-4"></div>
