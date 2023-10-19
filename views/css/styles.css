@@ -26,6 +26,12 @@ body {
     padding: 1rem;
 }
 
+.botao-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .botao-roxo {
     background-color: #695783;
     border-color: #695783 ;
