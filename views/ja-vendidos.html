@@ -449,5 +449,19 @@
     <!--Bootstrap JavaScript-->
     <script type="text/JavaScript" src="js/bootstrap.js"></script>
     <script type="text/JavaScript" src="js/bootstrap.bundle.js"></script>
+
+  <!--JavaScript próprio-->
+  <script>
+    function pesquisar() {
+      var endereco = document.getElementById('barra-pesquisa').value;
+
+      if(endereco == '' || endereco == 0) {
+        alert('Insira um logradouro válido');
+      } else {
+        window.location.href = "resultado-busca.html";
+      }
+    }
+  </script>
+
 </body>
 </html>
