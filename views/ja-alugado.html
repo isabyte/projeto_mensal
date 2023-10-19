@@ -68,26 +68,26 @@
     <div class="row col-md-12">
       <div class="col-md-4"></div>
       <div class="col-md-3">
-        <input class="form-control" type="search" placeholder="Digite um bairro ou rua" aria-label="Search">
+        <input class="form-control" id="barra-pesquisa" type="search" placeholder="Digite um bairro ou rua" aria-label="Search">
       </div>
       <div class="col-md-1">
-        <a href="resultado-busca.html" class="btn btn-secondary botao-roxo" role="button">Pesquisar</a>
+        <button type="button" class="btn btn-secondary botao-roxo" id="btn-pesquisar" role="button" onclick="pesquisar()">Pesquisar</button>
+        <!--a href="resultado-busca.html" class="btn btn-secondary botao-roxo" role="button">Pesquisar</a-->
       </div>
       <div class="col-md-4"></div>
     </div>
 
+    <!--pesquisa avançada-->
     <div class="row col-md-12">
       <div class="col-md-4"></div>
       <div class="col-md-4 pesquisa-avancada">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-secondary botao-roxo" data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop">
+        <button type="button" class="btn btn-secondary botao-roxo" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
           Pesquisa avançada
         </button>
 
         <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -110,8 +110,8 @@
                     <label class="form-check-label" for="flexCheckDefault">
                       Venda
                     </label>
-                  </div><br />
-
+                  </div><br/>
+                    
                   <h1 class="h6">No estilo...</h1>
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -124,24 +124,24 @@
                     <label class="form-check-label" for="flexCheckDefault">
                       Apartamento
                     </label>
-                  </div><br />
+                  </div><br/>
 
                   <h1 class="h6">No bairro...</h1>
-                  <input type="text" class="form-control"><br />
+                  <input type="text" class="form-control"><br/>
 
                   <h1 class="h6">De valor mínimo...</h1>
                   <div class="input-group mb-3">
                     <span class="input-group-text">$</span>
                     <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
                     <span class="input-group-text">.00</span>
-                  </div><br />
+                  </div><br/>
 
                   <h1 class="h6">E valor máximo...</h1>
                   <div class="input-group mb-3">
                     <span class="input-group-text">$</span>
                     <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
                     <span class="input-group-text">.00</span>
-                  </div><br />
+                  </div><br/>
 
                   <h1 class="h6">Com a seguinte quantidade de quartos...</h1>
                   <select class="form-select" aria-label="Default select example">
@@ -150,7 +150,7 @@
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4+">4 ou mais</option>
-                  </select><br />
+                  </select><br/>
 
                   <h1 class="h6">E a seguinte quantidade de banheiros...</h1>
                   <select class="form-select" aria-label="Default select example">
@@ -159,7 +159,7 @@
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4+">4 ou mais</option>
-                  </select><br />
+                  </select><br/>
 
                   <h1 class="h6">E mais essas características...</h1>
                   <div class="form-check">
@@ -213,7 +213,7 @@
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      Parque infantil
+                    Parque infantil
                     </label>
                   </div>
                 </form>
@@ -225,7 +225,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>  
       </div>
 
       <div class="col-md-4"></div>
