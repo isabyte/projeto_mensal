@@ -68,10 +68,11 @@
     <div class="row col-md-12">
       <div class="col-md-4"></div>
       <div class="col-md-3">
-        <input class="form-control" type="search" placeholder="Digite um bairro ou rua" aria-label="Search">
+        <input class="form-control" id="barra-pesquisa" type="search" placeholder="Digite um bairro ou rua" aria-label="Search">
       </div>
       <div class="col-md-1">
-        <a href="resultado-busca.html" class="btn btn-secondary botao-roxo" role="button">Pesquisar</a>
+        <button type="button" class="btn btn-secondary botao-roxo" id="btn-pesquisar" role="button" onclick="pesquisar()">Pesquisar</button>
+        <!--a href="resultado-busca.html" class="btn btn-secondary botao-roxo" role="button">Pesquisar</a-->
       </div>
       <div class="col-md-4"></div>
     </div>
@@ -285,5 +286,20 @@
   <!--Bootstrap JavaScript-->
   <script type="text/JavaScript" src="js/bootstrap.js"></script>
   <script type="text/JavaScript" src="js/bootstrap.bundle.js"></script>
+
+  <!--JavaScript próprio-->
+  <script>
+    function pesquisar() {
+      var endereco = document.getElementById('barra-pesquisa').value;
+
+      if(endereco == '' || endereco == 0) {
+        alert('Insira um logradouro válido');
+      } else {
+        window.location.href = "resultado-busca.html";
+      }
+    }
+  </script>
+
+
 </body>
 </html>
