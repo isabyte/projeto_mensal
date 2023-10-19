@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Imobiliária da Kiki</title>
+
+    <!--Bootstrap css externo-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!--Meu css-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--barra de navegação-->
+    <nav
+      class="navbar navbar-expand-lg"
+      data-bs-theme="dark"
+      style="background-color: #695783"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Imobiliária da Kiki</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="para-alugar.html">Para alugar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="para-vender.html">Para vender</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ja-alugado.html">Já alugados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ja-vendidos.html">Já vendidos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Corretor
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="perfil-corretor.html"
+                    >Meu perfil</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="meus_clientes.html"
+                    >Meus clientes</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contratos.html"
+                    >Meus contratos</a
+                  >
+                </li>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="cadastrar-corretor.html"
+                  >Cadastrar Corretor</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="relatorio-vendas.html"
+                  >Relatórios</a
+                >
+                <a class="dropdown-item" href="infograficos.html"
+                  >Infográfico</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="index.html">Sair</a>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="row col-md-12"  style="margin: 0;">
+      <div class="col-md-3" style="background-color: #977cbc25;"></div>
+      <div class="col-md-6">
+        
+        <form style="width: 85%; margin-left: 8%;">
+          <br> 
+          <div class="modal-header" style="background-color: #695783; border-radius: 5px; height: 60px;">
+           <br> <h2 style="color: white;">Meu Perfil</h2><br></section>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nome"
+                placeholder="Joazinho da Silva"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <br>
+              <label for="cpf">CPF:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cpf"
+                placeholder="012.453.345-06"
+                disabled
+              />
+            </div>
+            <div class="form-group">
+              <br>
+              <label for="dataNascimento">Data de Nascimento: 10/09/1990</label>
+          </div>
+          <div class="form-group">
+            <br>
+            <label >Gênero:</label>
+            <input type="text" class="form-control" placeholder="Masculino" disabled/>
+            <br>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cep">CEP:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cep"
+                placeholder="85856-235"
+              />
+            </div>
+            <div class="form-group">
+              <br>
+              <label for="rua">Rua / N°:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="rua"
+                placeholder="Rua Armando Justos, 989"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <br>
+              <label for="cidade">Cidade / Estado</label>
+              <input type="text" class="form-control" placeholder="Foz do Iguaçu - Paraná" disabled>
+            <br>
+                      </div>
+          </div>
+          <div class="form-row">
+              <label for="email">E-mail:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="exemplo@exemplo.com"
+                disabled
+              />
+            </div>
+            <div class="form-group">
+              <br>
+              <label for="senha">Senha:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="senha"
+                placeholder="*******"
+                disabled
+              />
+            </div>
+            <br>
+<a href="#" type="button" class="btn btn-secondary botao-roxo" style="width: 100%;">Editar perfil</a>
+          <br>
+          <br>
+        </form>
+      </div>
+      <div class=" row col-md-3" style="background-color: #977cbc25; margin: 0 auto;">
+      </div>
+    </div>
+
+  </body>
+</html>
